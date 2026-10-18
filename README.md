@@ -1,9 +1,11 @@
-# GitHub Pages preview
+# Vietnam Legal Advisor
 
-Target owner: Novakarus. Repository: VLSA.
+![Vietnam Legal Advisor](assets/vietnam-legal-advisor-0691.png)
 
-This four-page static site is a preview, not a published policy. Finalize the marked privacy/terms drafts before public submission; remove noindex once approved. No analytics, remote fonts, scripts, forms or plugin skill files are included.
+Free modular Vietnamese legal assistant, published by Thanh Nguyen.
 
-Upload the contents to the repository root. In Settings > Pages select Deploy from a branch, main and /(root). Expected URL after successful deployment: https://novakarus.github.io/VLSA/ . This URL has not been provisioned or verified.
+Website: https://novakarus.github.io/VLSA/
 
-Hosting-provider processing must also be reviewed before finalizing the privacy notice. Support email retention and deletion are not yet confirmed.
+Privacy policy includes publisher-only support mailbox access and deletion within 90 days after resolution, except legally required retention. Terms remain a draft. The plugin is currently Private.
+
+This repository contains website files, not plugin skill sources.
