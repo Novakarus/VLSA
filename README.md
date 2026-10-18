@@ -1,6 +1,6 @@
 # Vietnam Legal Advisor
 
-![Vietnam Legal Advisor](assets/vietnam-legal-advisor-0691.png)
+![Vietnam Legal Advisor](assets/vietnam-legal-advisor-icon-v4.png)
 
 Free modular Vietnamese legal assistant, published by Thanh Nguyen.
 
