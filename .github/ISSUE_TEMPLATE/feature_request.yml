@@ -1,0 +1,10 @@
+name: Đề xuất cải tiến
+description: Đề xuất tình huống và kết quả cần hỗ trợ
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Nhu cầu và đề xuất
+      description: Không đưa hồ sơ khách hàng hoặc dữ liệu nhạy cảm.
+    validations:
+      required: true

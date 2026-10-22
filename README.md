@@ -1,11 +1,9 @@
-# Vietnam Legal Advisor
+# Website — Vietnam Legal Advisor
 
-![Vietnam Legal Advisor](assets/vietnam-legal-advisor-icon-v4.png)
+This directory is the GitHub Pages website source. Configure Pages to publish the selected branch's `/docs` directory. It uses relative links and the repository base URL https://novakarus.github.io/VietnamLegalAdvisor/.
 
-Free modular Vietnamese legal assistant, published by Thanh Nguyen.
+The parent repository also contains plugin sources, tests and packaging tools. Publishing a public repository exposes those source files as well; Pages' `/docs` setting does not make the other folders private. For private plugin sources, keep the complete repository private and publish website files through a separate public website repository or an appropriate deployment workflow.
 
-Website: https://novakarus.github.io/VietnamLegalAdvisor/
+Publisher: Thanh Nguyen. Support: ntthanh912@gmail.com. The support mailbox policy permits publisher-only access and deletion within 90 days after resolution, subject to legally required retention.
 
-Privacy policy includes publisher-only support mailbox access and deletion within 90 days after resolution, except legally required retention. Terms remain a draft. The plugin is currently Private.
-
-This repository contains website files, not plugin skill sources.
+Terms remain a clearly marked draft and require completion before treating this website as a finalized public-submission package. Hosted plugin visibility is not asserted by these local files.
