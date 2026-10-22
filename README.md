@@ -26,9 +26,14 @@ Nhà phát hành không thu phí sử dụng plugin; phí và điều kiện n�
 
 ## Cấu trúc
 
-plugin/ — nguồn đóng gói; docs/ — nguồn website; tests/ — tình huống và báo cáo công khai; releases/ — hồ sơ phát hành; scripts/ — kiểm tra và đóng gói; .github/ — kiểm tra tự động và mẫu báo lỗi.
+- plugin/ — nguồn đóng gói;
+- docs/ — nguồn website;
+- tests/ — tình huống và báo cáo công khai;
+- releases/ — hồ sơ phát hành; scripts/ — kiểm tra và đóng gói;
+- github/ — kiểm tra tự động và mẫu báo lỗi.
 
 Website hiện có bản tương thích ở gốc để tiếp tục phục vụ cấu hình GitHub Pages hiện tại. Sửa docs/ rồi chạy `python scripts/sync_site.py` để đồng bộ. Có thể chuyển Pages sang main:/docs rồi bỏ bản tương thích trong một thay đổi riêng.
 
-Hỗ trợ: ntthanh912@gmail.com. Không gửi thông tin nhạy cảm qua Issues. [Privacy](https://novakarus.github.io/VietnamLegalAdvisor/privacy/) · [Đóng góp](CONTRIBUTING.md).
+Hỗ trợ: ntthanh912@gmail.com. Không gửi thông tin nhạy cảm qua Issues. 
+[Privacy](https://novakarus.github.io/VietnamLegalAdvisor/privacy/) · [Đóng góp](CONTRIBUTING.md).
 
