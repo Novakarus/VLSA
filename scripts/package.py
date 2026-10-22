@@ -10,5 +10,10 @@ with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED) as z:
   if p.is_file() and p.name!='LICENSE.md':
    entry=zipfile.ZipInfo(p.relative_to(ROOT/'plugin').as_posix(),date_time=(1980,1,1,0,0,0));entry.create_system=0;entry.compress_type=zipfile.ZIP_DEFLATED;entry.external_attr=0o100644<<16;z.writestr(entry,p.read_bytes())
 target.with_suffix('.zip.sha256').write_text(hashlib.sha256(target.read_bytes()).hexdigest()+'  '+target.name+'\n',encoding='utf-8')
+import json
+manifest=json.loads((ROOT/'releases/0.69.3/manifest.json').read_text(encoding='utf-8'))['files']
+with zipfile.ZipFile(target) as z:
+ assert set(z.namelist())==set(manifest),'Package file set differs from tested source'
+ assert all(hashlib.sha256(z.read(n)).hexdigest()==digest for n,digest in manifest.items()),'Package content differs from tested source'
 print('Created '+str(target))
 
