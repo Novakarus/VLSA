@@ -1,6 +1,12 @@
 from pathlib import Path
 import hashlib,json,re
 from urllib.parse import urlsplit,unquote
+from html.parser import HTMLParser
+class StylesheetParser(HTMLParser):
+ def __init__(self):super().__init__();self.styles=[]
+ def handle_starttag(self,tag,attrs):
+  a=dict(attrs)
+  if tag=='link' and a.get('rel')=='stylesheet':self.styles.append(a.get('href',''))
 ROOT=Path(__file__).resolve().parents[1]
 def validate():
  checks=[]
@@ -15,6 +21,11 @@ def validate():
  for p in skills:check(p.read_text(encoding='utf-8-sig').startswith('---'),'frontmatter '+p.parent.name)
  for p in (ROOT/'docs').rglob('*.html'):
   s=p.read_text(encoding='utf-8');check('lang="vi"' in s,'Vietnamese '+str(p.relative_to(ROOT)))
+  parser=StylesheetParser();parser.feed(s)
+  check(len(parser.styles)==1 and all('<' not in x and '>' not in x and urlsplit(x).path.endswith('assets/style.css') for x in parser.styles),'stylesheet HTML '+str(p.relative_to(ROOT)))
+  if p.relative_to(ROOT).as_posix()=='docs/terms/index.html':
+   labels=re.findall(r'<a href="#d\d+">([^<]+)</a>',s)
+   check(len(labels)==12 and all(not re.match(r'\d+\.',x) for x in labels),'terms TOC has one numbering layer')
   check('chưa công bố' not in s and '[ngày công bố' not in s,'published status '+str(p.relative_to(ROOT)))
   for target in re.findall(r'(?:href|src)="([^"]+)"',s):
    u=urlsplit(target)
@@ -30,3 +41,4 @@ def validate():
    check(not re.search(r'(?:C:\\Users\\|sk-[A-Za-z0-9]{24}|gh[pousr]_[A-Za-z0-9]{30})',p.read_text(encoding='utf-8-sig')),'no local paths/credential patterns '+str(p.relative_to(ROOT)))
  print(json.dumps({'status':'PASS','checks':len(checks),'skills':len(skills),'behavioral_test_run':False}))
 if __name__=='__main__':validate()
+
