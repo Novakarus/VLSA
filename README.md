@@ -12,9 +12,9 @@ Bộ kỹ năng hỗ trợ nghiên cứu, rà soát và soạn thảo pháp lý 
 
 Một kỹ năng điều phối và 12 kỹ năng chuyên môn: nghiên cứu pháp luật; kiểm tra hiệu lực; rà soát hợp đồng; thẩm định pháp lý; soạn thảo; lập luận; phản biện; quản trị doanh nghiệp; đầu tư và M&A; tuân thủ; kiểm tra nguồn; kiểm toán chất lượng. Mặc định trả lời tiếng Việt. Đây là quy trình chỉ dẫn, không phải 13 tác nhân tự chạy.
 
-## Bắt đầu
+## Hướng dẫn
 
-Tải nguồn từ GitHub, đọc [hướng dẫn](docs/guide/index.html), chọn thư mục plugin/ trong nền tảng hỗ trợ plugin cục bộ. Kiểm tra bằng `python scripts/validate.py`; tạo gói bằng `python scripts/package.py`. Khả năng cài đặt phụ thuộc nền tảng. [Tải gói 0.69.3 dựng lại](https://github.com/Novakarus/VietnamLegalAdvisor/releases/tag/v0.69.3), có mã kiểm tra riêng và giấy phép đi kèm. Nội dung 20 tệp khớp bản đã kiểm thử; toàn ZIP có thể khác mã ZIP lịch sử do cách nén.
+Tải nguồn từ GitHub, đọc [hướng dẫn](docs/guide/index.html), chọn thư mục plugin/ trong nền tảng hỗ trợ plugin cục bộ. Kiểm tra bằng `python scripts/validate.py`; tạo gói bằng `python scripts/package.py`. Khả năng cài đặt phụ thuộc nền tảng. [Tải gói 0.69.3 dựng lại](https://github.com/Novakarus/VietnamLegalAdvisor/releases/tag/v0.69.3), có mã kiểm tra riêng và giấy phép đi kèm.
 
 ## Quyền sử dụng
 
