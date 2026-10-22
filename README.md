@@ -14,7 +14,7 @@ Một kỹ năng điều phối và 12 kỹ năng chuyên môn: nghiên cứu ph
 
 ## Bắt đầu
 
-Tải nguồn từ GitHub, đọc [hướng dẫn](docs/guide/index.html), chọn thư mục plugin/ trong nền tảng hỗ trợ plugin cục bộ. Kiểm tra bằng `python scripts/validate.py`; tạo gói bằng `python scripts/package.py`. Khả năng cài đặt phụ thuộc nền tảng. Bản ZIP lịch sử có thể lấy từ GitHub Releases khi đã được đăng; hiện có thể tự tạo gói từ nguồn.
+Tải nguồn từ GitHub, đọc [hướng dẫn](docs/guide/index.html), chọn thư mục plugin/ trong nền tảng hỗ trợ plugin cục bộ. Kiểm tra bằng `python scripts/validate.py`; tạo gói bằng `python scripts/package.py`. Khả năng cài đặt phụ thuộc nền tảng. [Tải gói 0.69.3 dựng lại](https://github.com/Novakarus/VietnamLegalAdvisor/releases/tag/v0.69.3), có mã kiểm tra riêng và giấy phép đi kèm. Nội dung 20 tệp khớp bản đã kiểm thử; toàn ZIP có thể khác mã ZIP lịch sử do cách nén.
 
 ## Quyền sử dụng
 
@@ -31,3 +31,4 @@ plugin/ — nguồn đóng gói; docs/ — nguồn website; tests/ — tình hu�
 Website hiện có bản tương thích ở gốc để tiếp tục phục vụ cấu hình GitHub Pages hiện tại. Sửa docs/ rồi chạy `python scripts/sync_site.py` để đồng bộ. Có thể chuyển Pages sang main:/docs rồi bỏ bản tương thích trong một thay đổi riêng.
 
 Hỗ trợ: ntthanh912@gmail.com. Không gửi thông tin nhạy cảm qua Issues. [Privacy](https://novakarus.github.io/VietnamLegalAdvisor/privacy/) · [Đóng góp](CONTRIBUTING.md).
+
